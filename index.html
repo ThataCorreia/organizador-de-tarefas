@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+
+      <h1>Tarefas</h1>
+
+      <section class="listas">
+        <div class="listaP" id="listaProf">
+          <p>Profissionais</p>
+        </div>
+        <div class="listaL" id="listaLazer">
+          <p>Lazer</p>
+        </div>
+      </section>
+
+      <div class="formulario">
+        <input
+          type="text"
+          placeholder="Digite aqui a tarefa que deseja adicionar"
+          id="valor"/>
+        <div class="botoes">
+          <button onclick="salvar('listaProf')">Profissional</button>
+          <button onclick="salvar('listaLazer')">Lazer</button>
+        </div>
+      </div>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+
+  <footer>
+    <div class="teste">
+      <p> Desenvolvido por Thaís Correia no Entre PrograMarias - Janeiro / 2024 </p>
+    </div>
+  </footer>
+
+</html>

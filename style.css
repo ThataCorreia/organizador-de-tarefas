@@ -1,0 +1,124 @@
+body {
+    --cor-1: #fdf2f8;
+    --cor-3: #fbcfe8;
+    --cor-7: #be185d;
+    --radius-small: 8px;
+    --radius-normal: 12px;
+    
+    background-color: var(--cor-1);
+    margin: 0;
+    font-family: 'Montserrat';
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-3);
+    width: 600px;
+    margin: 12px auto;
+    padding: 12px;
+    border-radius: var(--radius-normal);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    margin: 0;
+    text-align: center;
+    border-bottom: 1.5px solid #ffffff;
+    text-transform: uppercase;
+    
+  }
+  
+  button {
+    background-color: var(--cor-7);
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    border-radius: var(--radius-small);
+    cursor: pointer;
+  }
+  
+  input {
+    border: 1px solid var(--cor-7);
+    border-radius: var(--radius-small);
+    padding: 10px 6px;
+  }
+
+  
+  input::placeholder{
+    font-size:medium;
+    opacity: 0.4;
+  }
+  
+  .listas {
+    display: flex;
+    gap: 6px;
+  }
+  
+  .listaP {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .listaL {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .card {
+    background-color: var(--cor-1);
+    padding: 8px;
+    border-radius: var(--radius-normal);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .card button {
+    align-self: center;
+  }
+  
+  .formulario {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .botoes {
+    display: flex;
+    gap: 6px;
+  }
+  
+  .botoes button {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  
+
+  footer {
+    background: var(--cor-3);
+    color:var(--cor-7);
+    font-weight: 500;
+    font-size: 0.75em;
+    text-align: center;
+    position: absolute;
+    bottom:0%;
+    width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    main {
+      width: 90%; 
+      margin: 12px auto;
+      padding: 8px; 
+    }
+  }
